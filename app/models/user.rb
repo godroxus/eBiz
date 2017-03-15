@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   #attr_accessor :username, :password, :password_confirmation
   has_many :transactions
   has_many :products
+  
 =begin
   attr_accessor :password
   before_save :encrypt_password
